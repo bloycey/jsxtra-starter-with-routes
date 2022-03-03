@@ -1,0 +1,14 @@
+/* In order to use global styling you need to either:
+	1. Target the web component wrapper.
+	2. Leverage CSS custom properties
+*/
+
+jsxtra-wc {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+:root {
+	--dark-grey: #222222;
+	--light-grey: #7f8c8d;
+}
