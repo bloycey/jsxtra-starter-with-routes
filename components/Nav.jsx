@@ -1,6 +1,6 @@
-import { store, wrapper } from "jsxtra";
-
-const Nav = () => {
+const Nav = ({ HELPERS }) => {
+	const { store, watch } = HELPERS;
+	watch(["routerInfo.currentPath"]);
 	const route = store.routerInfo.currentPath || "/";
 	const isActive = linkPath => (route === linkPath ? "active" : "");
 	return (
